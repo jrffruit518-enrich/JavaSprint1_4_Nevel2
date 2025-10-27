@@ -7,13 +7,12 @@ import java.util.Map;
 
 public class TestMapKey {
     @Test
-    void testMapKey() {
+    void testMapContainsKey() {
         Map<Integer,String> map = new HashMap<>();
         map.put(1,"good");
         map.put(2,"nice");
+
         assertThat(map).containsKey(1);
-
-
 
     }
 }
