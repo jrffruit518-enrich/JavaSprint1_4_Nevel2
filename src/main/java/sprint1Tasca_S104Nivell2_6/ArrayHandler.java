@@ -1,9 +1,9 @@
 package sprint1Tasca_S104Nivell2_6;
 
-public class ArrayHandle {
+public class ArrayHandler {
     public static int accessArray(int index) {
-        int [] array ={1,2,3};
-        return array [index];
+        int[] array = {1, 2, 3};
+        return array[index];
 
     }
 }
