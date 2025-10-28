@@ -5,11 +5,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestInteger {
     @Test
-    void testInterger() {
+    void testIntegerBeEqual() {
         Integer number = 18;
         Integer number1 = 18;
-        Integer number2 = 38;
         assertThat(number).isEqualTo(number1);
-        assertThat(number).isNotEqualTo(number2);
+    }
+
+    @Test
+    void testIntegerNotBeEqual() {
+        Integer number = 18;
+        Integer number1 = 12;
+        assertThat(number).isNotEqualTo(number1);
     }
 }

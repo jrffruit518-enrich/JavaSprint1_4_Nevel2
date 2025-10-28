@@ -4,12 +4,17 @@ import org.junit.jupiter.api.Test;
 
 public class TestPerson {
     @Test
-    void testPerson() {
+    void testPersonIsSame() {
         Person person = new Person("Rong", 48);
         Person person1 = person;
-        Person person2 = new Person("Lina", 42);
         assertThat(person).isSameAs(person1);
-        assertThat(person).isNotSameAs(person2);
 
+    }
+
+    @Test
+    void testPersonIsNotSame() {
+        Person person = new Person("Rong", 48);
+        Person person1 = new Person("Lina", 42);
+        assertThat(person).isNotSameAs(person1);
     }
 }
