@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestInteger {
     @Test
-    void testInterger() {
+    void testInteger() {
         Integer number = 18;
         Integer number1 = 18;
         Integer number2 = 38;
